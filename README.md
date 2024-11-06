@@ -1,6 +1,20 @@
-# Welcome to your Expo app 👋
+# Product Finder
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+O **Product Finder** É um aplicativo que permite aos usuários listar, adicionar, editar e deletar produtos, tanto masculinos quanto femininos. Com uma interface simples e intuitiva, é possível gerenciar facilmente os itens disponíveis, proporcionando uma experiência ágil e eficiente para quem deseja organizar e visualizar produtos de diferentes categorias.
+
+### Funcionalidades:
+- **Login**: Log in to access restricted functionalities like adding, editing, or deleting products.
+- **Logout**: Log out to end the user session and prevent further administrative actions.
+- **List Products**: View all available products, both male and female.
+- **Add Products**: Add new products to the product list.
+- **Edit Products**: Update the information of existing products, such as name, description, price, and discount.
+- **Delete Products**: Remove products from the list when they are no longer needed.
+- **View Product Details**: View detailed information about a product, including:
+  - Name
+  - Description
+  - Price
+  - Discount applied
+
 
 ## Get started
 
@@ -9,6 +23,10 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
    ```bash
    npm install
    ```
+   or
+     ```bash
+   yarn install
+   ```
 
 2. Start the app
 
@@ -16,36 +34,31 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
     npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+3. Fix dependencies if necessary
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+   ```bash
+    npx expo install --fix
+   ```
+   
+## Credenciais de Acesso
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+   - **username**: emilys
+   - **password**: emilyspass
 
-## Get a fresh project
+## Technologies Used
 
-When you're ready, run:
+   This project was developed using the following technologies and libraries:
 
-```bash
-npm run reset-project
-```
+   - **Expo**: Was used to develop and run the app with React Native, providing agility and cross-platform support.
+   - **Expo Router**: Was used to manage navigation between screens, with both tab and stack navigation.
+   - **React Query (TanStack Query)**: It was responsible for managing API calls, caching data, and optimizing loading.
+   - **Axios**: Was used to make HTTP requests to the API, allowing for easy addition, editing, and deletion of products.
+   - **Zustand**: Was used for global state management, storing user data and access tokens after login.
+   - **React Hook Form**: Was used to efficiently manage and validate the application's forms.
+   - **Restyle**: Was used to create the app's theme and custom components, maintaining visual consistency.
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
 
-## Learn more
+  **Obs**: 
+  - Restyle was chosen for styling because it offers greater flexibility in creating reusable themes and styles, provides TypeScript support to prevent errors and ensure safer, more reliable code, and helps maintain design consistency throughout the application. Additionally, it allows me to create custom components that automatically follow the defined theme, further simplifying the maintenance and scalability of the project.
 
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
-# ProductFinder
+  - A custom icon library was developed for the app, allowing only the icons actually used within the application to be loaded. This ensures 100% fidelity to the design layout and helps optimize performance by minimizing unnecessary assets.
