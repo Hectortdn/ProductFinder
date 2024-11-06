@@ -1,6 +1,6 @@
 # Product Finder
 
-O **Product Finder** É um aplicativo que permite aos usuários listar, adicionar, editar e deletar produtos, tanto masculinos quanto femininos. Com uma interface simples e intuitiva, é possível gerenciar facilmente os itens disponíveis, proporcionando uma experiência ágil e eficiente para quem deseja organizar e visualizar produtos de diferentes categorias.
+The **Product Finder** is an app that allows users to list, add, edit, and delete products, both for men and women. With a simple and intuitive interface, users can easily manage available items, providing a fast and efficient experience for those who wish to organize and view products from different categories.
 
 ### Funcionalidades:
 - **Login**: Log in to access restricted functionalities like adding, editing, or deleting products.
