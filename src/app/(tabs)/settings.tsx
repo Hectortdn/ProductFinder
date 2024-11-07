@@ -1,14 +1,14 @@
 import {
-  Text,
   Box,
+  Text,
+  Avatar,
   Screen,
   Button,
   SelectorNavigation,
-} from "../../components";
-import { Avatar } from "../../components/avatar/avatar";
-import { useTabStatusBarStyle } from "../../hooks";
-import { userServices } from "../../services";
-import { useLogout } from "../../domain";
+} from "@components";
+import { useTabStatusBarStyle } from "@hooks";
+import { userServices } from "@services";
+import { useLogout } from "@domain";
 
 const AVATAR_SIZE = 150;
 

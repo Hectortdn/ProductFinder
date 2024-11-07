@@ -1,12 +1,12 @@
 import React from "react";
 import { Stack } from "expo-router";
 import { useFonts } from "expo-font";
+import { ThemeProvider } from "@shopify/restyle";
 import * as SplashScreen from "expo-splash-screen";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
-import { ModalDefault } from "../components/modal-default/modal-default";
-import { ThemeProvider } from "@shopify/restyle";
-import { theme } from "../theme";
+import { ModalDefault } from "@components";
+import { theme } from "@theme";
 
 SplashScreen.preventAutoHideAsync();
 const queryClient = new QueryClient();

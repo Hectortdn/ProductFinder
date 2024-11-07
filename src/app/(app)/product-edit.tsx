@@ -1,9 +1,9 @@
 import React from "react";
 import { router, useLocalSearchParams } from "expo-router";
 
-import { Modal, Screen, ProductForm, ModalProps } from "../../components";
-import { ProductFormSchema } from "../../components/product-form/schema";
-import { ProductProps, useUpdateProduct } from "../../domain";
+import { Modal, Screen, ProductForm, ModalProps } from "@components";
+import { ProductFormSchema } from "@components/product-form/schema";
+import { ProductProps, useUpdateProduct } from "@domain";
 
 export default function ProductEdit() {
   const screenParams = useLocalSearchParams<{ productDetails: string }>();

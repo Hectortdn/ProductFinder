@@ -5,10 +5,10 @@ import {
   MaterialTopTabNavigationOptions,
 } from "@react-navigation/material-top-tabs";
 
-import { ProductList } from "../../components/product-list/product-list";
-import { FloatingActionButton, Screen } from "../../components";
-import { useTabStatusBarStyle } from "../../hooks";
-import { theme } from "../../theme";
+import { ProductList } from "@components/product-list/product-list";
+import { FloatingActionButton, Screen } from "@components";
+import { useTabStatusBarStyle } from "@hooks";
+import { theme } from "@theme";
 
 const Tab = createMaterialTopTabNavigator();
 
@@ -59,7 +59,10 @@ export default function Home() {
         />
       </Tab.Navigator>
 
-      <FloatingActionButton iconName="plus" onAction={handleRegisterNewProduct} />
+      <FloatingActionButton
+        iconName="plus"
+        onAction={handleRegisterNewProduct}
+      />
     </Screen>
   );
 }

@@ -10,8 +10,8 @@ import {
   ModalProps,
   CarrouselImage,
   ActivityIndicator,
-} from "../../components";
-import { useDeleteProduct, useGetProductDetails } from "../../domain";
+} from "@components";
+import { useDeleteProduct, useGetProductDetails } from "@domain";
 
 export default function ProductDetails() {
   const screenParams = useLocalSearchParams<{ productId: string }>();

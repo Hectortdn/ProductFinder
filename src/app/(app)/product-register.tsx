@@ -1,8 +1,8 @@
 import { router } from "expo-router";
 
-import { ProductFormSchema } from "../../components/product-form/schema";
-import { Modal, ModalProps, ProductForm, Screen } from "../../components";
-import { useRegisterProduct } from "../../domain";
+import { ProductFormSchema } from "@components/product-form/schema";
+import { Modal, ModalProps, ProductForm, Screen } from "@components";
+import { useRegisterProduct } from "@domain";
 
 export default function ProductRegister() {
   const { registerProduct, isLoadingProductRegister } = useRegisterProduct({
@@ -12,7 +12,7 @@ export default function ProductRegister() {
         ...MODAL_PRODUCT_REGISTER_SUCCESS,
         buttonPrimary: {
           title: "OK",
-          variant: 'primary',
+          variant: "primary",
           onPress: () => {
             Modal.hide();
             router.back();

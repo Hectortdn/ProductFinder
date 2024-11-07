@@ -1,5 +1,7 @@
+import { z } from "zod";
 import { router } from "expo-router";
 import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
 import { ScrollView, StatusBar, View } from "react-native";
 
 import {
@@ -9,12 +11,10 @@ import {
   Button,
   ModalProps,
   FormTextInput,
+  KeyboardAvoiding,
   FormPasswordInput,
-} from "../../components";
-import { KeyboardAvoiding } from "../../components/keyboard-avoiding/keyboard-avoiding";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { useAuthLogin } from "../../domain";
-import { z } from "zod";
+} from "@components";
+import { useAuthLogin } from "@domain";
 
 export default function LoginScreen() {
   const {
@@ -22,7 +22,10 @@ export default function LoginScreen() {
     setValue,
     handleSubmit,
     formState: { isValid },
-  } = useForm<FormProps>({ mode: "onChange", resolver: zodResolver(formLoginSchema) });
+  } = useForm<FormProps>({
+    mode: "onChange",
+    resolver: zodResolver(formLoginSchema),
+  });
 
   const { login, isLoading } = useAuthLogin({
     onSuccess: () => {

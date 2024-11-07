@@ -3,15 +3,14 @@
   "compilerOptions": {
     "strict": true,
     "paths": {
-      "@/*": [
-        "./src"
-      ]
+      "@root/*": ["./src/*"],
+      "@domain": ["./src/domain"],
+      "@hooks": ["./src/hooks/index"],
+      "@services": ["./src/services"],
+      "@theme": ["./src/theme/theme.ts"],
+      "@components": ["./src/components"],
+      "@components/*": ["./src/components/*"]
     }
   },
-  "include": [
-    "**/*.ts",
-    "**/*.tsx",
-    ".expo/types/**/*.ts",
-    "expo-env.d.ts"
-  ]
+  "include": ["**/*.ts", "**/*.tsx", ".expo/types/**/*.ts", "expo-env.d.ts"]
 }
